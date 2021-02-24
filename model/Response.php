@@ -46,8 +46,18 @@ class Response {
             // building response data array
             $this->_responseData['statusCode'] = 500;
             $this->_responseData['success'] = false;
+            $this->addMessage("Response creation error");
+            $this->responseData['messages'] = $this->_messages;
 
+        } else{
+            http_response_code($this->_httpStatusCode);
+            $this->_responseData['statusCode'] = $this->_httpStatusCode;
+            $this->_responseData['success'] = $this->_success;
+            $this->_responseData['messages'] = $this->_messages;
+            $this->_responseData['data'] = $this->_data;
         }
+
+        echo json_encode($this->_responseData);
 
 
     }
