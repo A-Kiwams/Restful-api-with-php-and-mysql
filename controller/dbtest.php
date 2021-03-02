@@ -16,4 +16,4 @@ try {
     exit; 
 }
 
-// This file is not needed: Only for testing purposes - Testing db connection
+// dbtest.php file is not needed: Only for testing purposes - Testing db connection
