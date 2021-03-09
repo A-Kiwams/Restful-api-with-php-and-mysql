@@ -10,8 +10,7 @@ class Task{
     private $_deadline;
     private $_completed;
 
-    //getters and setters
-
+    //Getters
     public function getID(){
         return $this->_id;
     }
@@ -30,6 +29,21 @@ class Task{
 
     public function getCompleted(){
         return $this->_completed;
+    }
+
+    //Setters
+    public function setID($id){
+        if(($id !== null) && (!is_numeric($id) || $id <= 0 || $id > 9223372036875775807 || $this->_id !== null)){
+            throw new TaskException("Task ID error");
+        }
+
+        $this->_id = $id;    //els $this->_id = $id;
+    }
+
+    public function setTitle($title){
+        if(strlen($title) < 0 || strlen($title) > 255){
+            throw new TaskException("Task title error");
+        } 
     }
 
 
