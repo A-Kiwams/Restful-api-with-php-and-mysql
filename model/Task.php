@@ -44,6 +44,12 @@ class Task{
         if(strlen($title) < 0 || strlen($title) > 255){
             throw new TaskException("Task title error");
         } 
+
+        $this->_title = $title; //otherwise if it is valid data
+    }
+
+    public function setDescription($description){
+        uuu
     }
 
 
