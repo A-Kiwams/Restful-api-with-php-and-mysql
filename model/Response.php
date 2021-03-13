@@ -10,7 +10,7 @@ class Response {
     private $_responseData = array();
 
     public function setSuccess($success){
-        $this->_success = $success;            // _success same as $_success
+        $this->_success = $success;           
     }
 
     public function setHttpStatusCode($httpStatusCode){
