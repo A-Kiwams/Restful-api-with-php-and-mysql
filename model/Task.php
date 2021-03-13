@@ -57,7 +57,9 @@ class Task{
     }
 
     public function setCompleted($completed){
-        kk
+        if(strtoupper($completed) !== 'Y' && strtoupper($completed) !== 'N'){
+            throw new TaskException("Task Completed Must Be Y or N");
+        }
     }
 
 
