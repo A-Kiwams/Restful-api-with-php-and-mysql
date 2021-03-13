@@ -52,6 +52,8 @@ class Task{
         if(($description !== null) && (strlen($description) > 16777215)){
             throw new TaskException("Task Discription Error");
         }
+
+        $this->_description = $description;
     }
 
 
