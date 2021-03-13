@@ -49,7 +49,9 @@ class Task{
     }
 
     public function setDescription($description){
-        
+        if(($description !== null) && (strlen($description) > 16777215)){
+            throw new TaskException("Task Discription Error");
+        }
     }
 
 
