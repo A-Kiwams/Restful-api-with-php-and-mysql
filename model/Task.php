@@ -56,10 +56,20 @@ class Task{
         $this->_description = $description;
     }
 
+    public function setDeadline($deadline){
+        if(){
+            kk
+        }
+
+        $this->_deadline = $deadline;
+    }
+
     public function setCompleted($completed){
         if(strtoupper($completed) !== 'Y' && strtoupper($completed) !== 'N'){
             throw new TaskException("Task Completed Must Be Y or N");
         }
+
+        $this->_completed = $completed;
     }
 
 
