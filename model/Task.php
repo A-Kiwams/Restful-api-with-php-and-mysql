@@ -56,5 +56,9 @@ class Task{
         $this->_description = $description;
     }
 
+    public function setCompleted($completed){
+        kk
+    }
+
 
 }
