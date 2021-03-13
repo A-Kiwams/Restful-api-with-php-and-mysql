@@ -57,8 +57,8 @@ class Task{
     }
 
     public function setDeadline($deadline){
-        if(){
-            kk
+        if(($deadline !== null) && date_format(, 'd/m/Y H:1') != $deadline date_create_from_format('d/m/Y H:1', $deadline)){
+            throw new TaskException("Task deadline date time error");
         }
 
         $this->_deadline = $deadline;
