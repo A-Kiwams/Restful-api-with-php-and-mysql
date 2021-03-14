@@ -10,6 +10,14 @@ class Task{
     private $_deadline;
     private $_completed;
 
+    public function __construct($id, $title, $description, $deadline, $completed){
+        $this->setID($id);
+        $this->setTitle($title);
+        $this->setDescription($description);
+        $this->setDeadline($deadline);
+        $this->setCompleted($completed);
+    }
+
     //Getters
     public function getID(){
         return $this->_id;
