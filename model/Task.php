@@ -23,7 +23,7 @@ class Task{
         return $this->_id;
     }
 
-    public function getTitile(){
+    public function getTitle(){
         return $this->_title;
     }
 
