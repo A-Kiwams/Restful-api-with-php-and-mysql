@@ -80,5 +80,16 @@ class Task{
         $this->_completed = $completed;
     }
 
+    // helper method
+    public function returnTaskAsArray(){
+        $task = array();
+        $task['id'] = $this->getID();
+        $task['title'] = $this->getTitle();
+        $task['description'] = $this->getDescription();
+        $task['deadline'] = $this->getDeadline();
+        $task['completed'] = $this->getCompleted();
+        return $task;
+    }
+
 
 }
