@@ -9,7 +9,7 @@ try{
     $readDB = DB::connectReadDB();
 
 } catch(PDOException $ex){
-
+    error_log("Connection error".$ex, 0);
     $response = new Response();
     $response->setHttpStatusCode(500);
     $response->setSuccess(false);
