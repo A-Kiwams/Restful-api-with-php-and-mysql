@@ -14,4 +14,5 @@ try{
     $response->setHttpStatusCode(500);
     $response->setSuccess(false);
     $response->addMessage("Database connection error");
+    $response->send();
 }
