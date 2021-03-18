@@ -22,5 +22,10 @@ try{
 // Logic of the api: getting a single task
 
 if(array_key_exists("taskid", $_GET)){
-    JJ
+    
+    $taskid = $_GET['taskid'];
+
+    if($taskid == '' || !is_numeric($taskid)){
+        kk
+    }
 }
