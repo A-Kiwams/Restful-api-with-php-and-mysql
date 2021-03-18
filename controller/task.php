@@ -29,5 +29,8 @@ if(array_key_exists("taskid", $_GET)){
         $response = new Response();
         $response->setHttpStatusCode(400);
         $response->setSuccess(false);
+        $response->addMessage("Task ID can not be blank or numeric");
+        $response->send();
+        exit();
     }
 }
