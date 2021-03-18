@@ -26,6 +26,8 @@ if(array_key_exists("taskid", $_GET)){
     $taskid = $_GET['taskid'];
 
     if($taskid == '' || !is_numeric($taskid)){
-        kk
+        $response = new Response();
+        $response->setHttpStatusCode(400);
+        $response->setSuccess(false);
     }
 }
