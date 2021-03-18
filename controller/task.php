@@ -18,3 +18,9 @@ try{
     $response->send();
     exit();
 }
+
+// Logic of the api: getting a single task
+
+if(array_key_exists("taskid", $_GET)){
+    JJ
+}
