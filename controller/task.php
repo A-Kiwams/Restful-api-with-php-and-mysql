@@ -40,5 +40,10 @@ if(array_key_exists("taskid", $_GET)){
     } elseif($_SERVER['REQUEST_METHOD'] === 'DELETE'){
         HHHH 
 
-    } elseif($_SERVER['REQUEST_METHOD'] === 'UPDATE')
+    } elseif($_SERVER['REQUEST_METHOD'] === 'PATCH'){
+        JJJJ
+
+    } else {
+        hh 
+    }
 }
