@@ -36,6 +36,9 @@ if(array_key_exists("taskid", $_GET)){
 
     if($_SERVER['REQUEST_METHOD'] === 'GET'){
         HHHH
-        
-    } elseif()
+
+    } elseif($_SERVER['REQUEST_METHOD'] === 'DELETE'){
+        HHHH 
+
+    } elseif($_SERVER['REQUEST_METHOD'] === 'UPDATE')
 }
