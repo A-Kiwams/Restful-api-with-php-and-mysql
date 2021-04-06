@@ -38,12 +38,12 @@ if(array_key_exists("taskid", $_GET)){
         HHHH
 
     } elseif($_SERVER['REQUEST_METHOD'] === 'DELETE'){
-        HHHH 
+        //logic goes here 
 
     } elseif($_SERVER['REQUEST_METHOD'] === 'PATCH'){
-        JJJJ
+        //logic
 
     } else {
-        hh 
+        //code
     }
 }
