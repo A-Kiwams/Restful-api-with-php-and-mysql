@@ -16,4 +16,4 @@ try {
     exit; 
 }
 
-// File not needed: Only for testing purposes - Testing db connection
+// File not needed: Only testing db connection
