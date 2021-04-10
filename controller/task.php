@@ -41,7 +41,7 @@ if(array_key_exists("taskid", $_GET)){
         //logic
 
     } elseif($_SERVER['REQUEST_METHOD'] === 'PATCH'){
-        //code
+        //logic
 
     } else {
         //code
