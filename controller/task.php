@@ -44,6 +44,6 @@ if(array_key_exists("taskid", $_GET)){
         //logic
 
     } else {
-        //code
+        //logic
     }
 }
