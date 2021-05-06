@@ -38,7 +38,7 @@ if(array_key_exists("taskid", $_GET)){
         HHHH
 
     } elseif($_SERVER['REQUEST_METHOD'] === 'DELETE'){
-        //logic for functionality
+        //updating soon!
 
     } elseif($_SERVER['REQUEST_METHOD'] === 'PATCH'){
         //updating soon
