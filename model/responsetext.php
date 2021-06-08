@@ -9,5 +9,3 @@ $response->addMessage("Testing response model");
 $response->send();
 
 // This file is for testing purpose only: To make sure response model is working correctly
-
-// You can delete it
