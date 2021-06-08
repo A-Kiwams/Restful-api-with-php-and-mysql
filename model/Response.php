@@ -39,11 +39,11 @@ class Response {
             header('Cache-control, no-cache, no-store');
         }
 
-        // check for response sucess
+        // check for the resonse 
         if(($this->_success !== false && $this->_success !== true)  || !is_numeric($this->_httpStatusCode)) {
             http_response_code(500);
 
-            // building response data array
+            // building response data array 
             $this->_responseData['statusCode'] = 500;
             $this->_responseData['success'] = false;
             $this->addMessage("Response creation error");
