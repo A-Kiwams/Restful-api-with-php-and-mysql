@@ -8,6 +8,8 @@ Clone or download project
 
 Install WAMP/APACHE SERVER
 
+Postman for testing api
+
 User name: 'root'
 
 Password: 'blank'
