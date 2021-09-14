@@ -30,7 +30,7 @@ class Response {
     }
 
     public function send(){                                                 // response data to be send to client
-        header('Content-type: application/json;charset=utf-8');            // tells client what type of data it's
+        header('Content-type: application/json;charset=utf-8'); 
 
         // wether client can cache response
         if($this->_toCache == true){                                     
@@ -39,7 +39,7 @@ class Response {
             header('Cache-control, no-cache, no-store');
         }
 
-        // check for the resonse 
+        // check resonse 
         if(($this->_success !== false && $this->_success !== true)  || !is_numeric($this->_httpStatusCode)) {
             http_response_code(500);
 
