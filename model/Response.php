@@ -29,7 +29,7 @@ class Response {
         $this->_toCache = $toCache;
     }
 
-    public function send(){                                                 // response data to be send to client
+    public function send(){                                      
         header('Content-type: application/json;charset=utf-8'); 
 
         // wether client can cache response
