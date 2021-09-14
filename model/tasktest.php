@@ -10,6 +10,4 @@ try{
 } catch (TaskException $ex) {
     echo "Error: ".$ex->getMessage();
 }
-
-// File not needed. Only testing task.php model  
 // testing purposes. file not needed
