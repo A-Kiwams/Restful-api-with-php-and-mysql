@@ -1,4 +1,4 @@
-# Restful api with vanilla php and mysql
+# Vanilla php and mysql rest api
  
 ## code might not be complet as its currently re-written to take care of security Vulnerabilities
 
